@@ -1,0 +1,36 @@
+﻿body, html, div {
+    font-family: "JF Flat", Tahoma !important;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: "JF Flat", Tahoma ;
+}
+
+
+/* Light */
+@font-face {
+    font-family: "JF Flat";
+    src: url('../fonts/JF-flat/JF-Flat-light.eot');
+    src: url('../fonts/JF-flat/JF-Flat-light.eot?#iefix') format('embedded-opentype'), url('../fonts/JF-flat/JF-Flat-light.svg#JF Flat Light') format('svg'), url('../fonts/JF-flat/JF-Flat-light.woff') format('woff'), url('../fonts/JF-flat/JF-Flat-light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: "JF Flat";
+    src: url('../fonts/JF-flat/JF-Flat-regular.eot');
+    src: url('../fonts/JF-flat/JF-Flat-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/JF-flat/JF-Flat-regular.svg#JF Flat Regular') format('svg'), url('../fonts/JF-flat/JF-Flat-regular.woff') format('woff'), url('../fonts/JF-flat/JF-Flat-regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: "JF Flat";
+    src: url('../fonts/JF-flat/JF-Flat-medium.eot');
+    src: url('../fonts/JF-flat/JF-Flat-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/JF-flat/JF-Flat-medium.svg#JF Flat Medium') format('svg'), url('../fonts/JF-flat/JF-Flat-medium.woff') format('woff'), url('../fonts/JF-flat/JF-Flat-medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
