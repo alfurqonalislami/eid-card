@@ -103,7 +103,7 @@
             //document.write('<img src="' + img + '"/>');
 	    //window.location.href = img;
 	    let unduh = document.querySelector('#unduh');
-	    unduh.setAttribute('download', 'Kartu-Idul-Adha-1442-AlFurqon.png');
+	    unduh.setAttribute('download', 'Kartu-Idul-Adha-1443-AlFurqon.jpg');
 	    unduh.setAttribute('href', img);
 	    unduh.click();
         }
@@ -119,7 +119,7 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 4000, 3000);
-            var fontsize = 30;
+            var fontsize = 16;
 
             if (name.length > 30) {
                 fontsize = 30 - (name.length - 30);
@@ -134,12 +134,12 @@
                 context.fillStyle = "#142d54";
                 context.textAlign = "center";
                 //context.fillText(res, 500, 875);
-                context.fillText(res, 360, 618);
+                context.fillText(res, 485, 560);
 
                 
 
             };
-            imageObj.src = "images/idul-adha-1442v4-id.png";
+            imageObj.src = "images/idul-adha-1443v1-id.jpg";
         }
 
         //window.onload = function () {
@@ -150,16 +150,16 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 30px hpsimplified";
+                context.font = "bold 16px hpsimplified";
                 context.fillStyle = "#142d54";
                 context.textAlign = "center";
-                context.fillText("Nama Anda akan muncul di sini", 360, 618);
+                context.fillText("Nama Anda", 485, 560);
 
 
                 
 
             };
-            imageObj.src = "images/idul-adha-1442v4-id.png";
+            imageObj.src = "images/idul-adha-1443v1-id.jpg";
         });
 
 
