@@ -257,14 +257,21 @@ body.boxed-layout
 
 
 body.boxed-layout {
-     background: url(images/Subtle-Prism.svg);
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 100vh;
     display: table;
     position: relative;
     width: 100%;
+    background-color:hsla(21,0%,100%,1);
+    background-image: radial-gradient(at 66% 29%, hsla(36,37%,54%,1) 0px, transparent 50%),
+        radial-gradient(at 21% 20%, hsla(83,0%,100%,1) 0px, transparent 50%),
+        radial-gradient(at 31% 66%, hsla(187,75%,66%,1) 0px, transparent 50%),
+        radial-gradient(at 48% 36%, hsla(38,61%,79%,1) 0px, transparent 50%),
+        radial-gradient(at 54% 61%, hsla(299,69%,72%,1) 0px, transparent 50%),
+        radial-gradient(at 69% 26%, hsla(200,85%,69%,1) 0px, transparent 50%),
+        radial-gradient(at 61% 73%, hsla(284,87%,66%,1) 0px, transparent 50%);
 }
 
 .logo-element {
