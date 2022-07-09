@@ -62,7 +62,7 @@
 </head>
 
 <body class="rtls boxed-layout" >
-    <div class="container" style="max-width:720px;">
+    <div class="container" style="max-width:1080px;">
         
         <div class="doc" style="padding-top:0%; ">
             <br />
@@ -70,7 +70,7 @@
                 Kartu Idul Adha <b>Ma'had Al-Furqon Al-Islami Gresik</b>
             </div>
             <hr />
-            <canvas width="720" height="720" id="myCanvas"></canvas>
+            <canvas width="1080" height="1080" id="myCanvas"></canvas>
             <br />
             <input type="text" id="txt" placeholder="Tuliskan nama Anda di sini, lalu klik Tampilkan" class="form-control" style="font-size:16px; text-align:left;  " />
 
@@ -119,7 +119,7 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 4000, 3000);
-            var fontsize = 16;
+            var fontsize = 20;
 
             if (name.length > 30) {
                 fontsize = 30 - (name.length - 30);
@@ -134,12 +134,12 @@
                 context.fillStyle = "#1a4c40";
                 context.textAlign = "center";
                 //context.fillText(res, 500, 875);
-                context.fillText(res, 485, 560);
+                context.fillText(res, 730, 836);
 
                 
 
             };
-            imageObj.src = "images/idul-adha-1443v1-id.jpg";
+            imageObj.src = "images/idul-adha-1443v2-id.jpg";
         }
 
         //window.onload = function () {
@@ -150,16 +150,16 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 16px hpsimplified";
+                context.font = "bold 20px hpsimplified";
                 context.fillStyle = "#1a4c40";
                 context.textAlign = "center";
-                context.fillText("Nama Anda", 485, 560);
+                context.fillText("Nama Anda", 730, 836);
 
 
                 
 
             };
-            imageObj.src = "images/idul-adha-1443v1-id.jpg";
+            imageObj.src = "images/idul-adha-1443v2-id.jpg";
         });
 
 
