@@ -30,10 +30,7 @@
 	<link href="css/custom.css" rel="stylesheet" />
 	<link href="css/OverrideCss.css?202207080533" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
-	<link href="css/fonts.css?202107151359" rel="stylesheet" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+	<link href="css/fonts.css?202304201520" rel="stylesheet" />
 
 	<link rel="icon" href="images/logo.png" sizes="32x32" />
 	<link rel="icon" href="images/logo.png" sizes="192x192" />
@@ -103,11 +100,11 @@
 			var canvas = document.getElementById("myCanvas"); 
 			var img = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
 			//document.write('<img src="' + img + '"/>');
-		//window.location.href = img;
-		let unduh = document.querySelector('#unduh');
-		unduh.setAttribute('download', 'Kartu-Idul-Fitri-1444-AlFurqon.jpg');
-		unduh.setAttribute('href', img);
-		unduh.click();
+			//window.location.href = img;
+			let unduh = document.querySelector('#unduh');
+			unduh.setAttribute('download', 'Kartu-Idul-Fitri-1444-AlFurqon.jpg');
+			unduh.setAttribute('href', img);
+			unduh.click();
 		}
 
 		function showImg() {
@@ -120,21 +117,21 @@
 			var res = str1.concat(name, str2);
 			var canvas = document.getElementById("myCanvas");
 			var context = canvas.getContext("2d");
-			context.clearRect(0, 0, 4000, 3000);
-			var fontsize = 48;
+			context.clearRect(0, 0, 1024, 1024);
+			var fontsize = 60;
 
-			if (name.length > 30) {
-				fontsize = 30 - (name.length - 30);
-			//console.log(name.length);
-			//console.log(fontsize);
+			if (name.length > 25) {
+				fontsize = 60 - (name.length - 25);
+			console.log(name.length);
+			console.log(fontsize);
 			}
 			var imageObj = new Image();
 			imageObj.onload = function () {
 				//context.scale(0.15, 0.15);
 				context.drawImage(imageObj, 0, 0);
 				// context.font = "bold "+ fontsize + "px hpsimplified";
-				context.font = "bold "+ fontsize + "px Open Sans";
-				context.fillStyle = "#1a4c40";
+				context.font = "bold "+ fontsize + "px Hidayatullah";
+				context.fillStyle = "#206159";
 				context.textAlign = "center";
 				// context.fillText(res, 730, 836);
 				context.fillText(res, 515, 830);
@@ -151,8 +148,8 @@
 				//context.scale(0.15, 0.15);
 				context.drawImage(imageObj, 0, 0);
 				// context.font = "bold 20px hpsimplified";
-				context.font = "bold 48px Open Sans";
-				context.fillStyle = "#1a4c40";
+				context.font = "bold 60px Hidayatullah";
+				context.fillStyle = "#206159";
 				context.textAlign = "center";
 				context.fillText("Nama Anda", 515, 830);
 			};
