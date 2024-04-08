@@ -102,7 +102,7 @@
 			//document.write('<img src="' + img + '"/>');
 			//window.location.href = img;
 			let unduh = document.querySelector('#unduh');
-			unduh.setAttribute('download', 'Kartu-Idul-Adha-1444-AlFurqon.jpg');
+			unduh.setAttribute('download', 'Kartu-Idul-Fithri-1445-AlFurqon.jpg');
 			unduh.setAttribute('href', img);
 			unduh.click();
 		}
@@ -122,8 +122,8 @@
 
 			if (name.length > 25) {
 				fontsize = 60 - (name.length - 25);
-			console.log(name.length);
-			console.log(fontsize);
+			// console.log(name.length);
+			// console.log(fontsize);
 			}
 			var imageObj = new Image();
 			imageObj.onload = function () {
@@ -131,12 +131,13 @@
 				context.drawImage(imageObj, 0, 0);
 				// context.font = "bold "+ fontsize + "px hpsimplified";
 				context.font = "bold "+ fontsize + "px Hidayatullah";
-				context.fillStyle = "#206159";
+				// context.fillStyle = "#206159";
+				context.fillStyle = "#f7f7f5";
 				context.textAlign = "center";
 				// context.fillText(res, 730, 836);
-				context.fillText(res, 505, 850);
+				context.fillText(res, 505, 770);
 			};
-			imageObj.src = "images/idul-adha-1444.jpg";
+			imageObj.src = "images/idul-fithr-1445.jpg";
 		}
 
 		//window.onload = function () {
@@ -150,10 +151,11 @@
 				// context.font = "bold 20px hpsimplified";
 				context.font = "bold 60px Hidayatullah";
 				context.fillStyle = "#206159";
+				context.fillStyle = "#f7f7f5";
 				context.textAlign = "center";
-				context.fillText("Nama Anda", 505, 850);
+				context.fillText("Nama Anda", 505, 770);
 			};
-			imageObj.src = "images/idul-adha-1444.jpg";
+			imageObj.src = "images/idul-fithr-1445.jpg";
 		});
 
 	</script>
